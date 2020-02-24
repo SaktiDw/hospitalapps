@@ -2,45 +2,105 @@
 <html>
 <head>
     <title>apappun</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section {            
+            background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ),url("gambar/ilustrasi-profesi-dokter-dok-snowing.jpg");
+            background-size: cover;
+            padding:10vh;
+        }
+        .setengah {
+            width: 40%;
+            padding: 100px 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section h1 {
+            font-size: 30px;
+        }
+        form div {
+            margin: 10px;
+        }
+        section form input, section form select,section form button{
+            padding: 6px 12px;
+            display: block;
+            width: 100%;
+        }
+        section form button {
+            width:40%;
+            margin: 10px auto;
+            background-color: rgb(98, 98, 255);
+            border: 1px solid transparent;
+            border-radius: 50px;
+            color: #fff;
+            padding: 12px;
+        }
+        input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            display: inline;
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <h1 class="logo">LOGO</h1>
+        <ul>
+        <li><a href="/hospitalapps">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="fasilitas-dan-layanan-serta-hubungi-kami.html">Fasilitas & Layanan</a></li>
+        <li><a href="jadwal_dokter.html">Dokter</a></li>
+        <li><a href="agenda.html">Kegiatan</a></li>
+        <li><a href="Booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <form action="">
+            <input type="text" name="search" id="">
+            <button type="submit">Cari</button>
+        </form>
+    </nav>
+    <section>
+    <div class="setengah">
     <h1>Pendaftaran Pasien Online</h1>
     <p>from booking formulir pendaftaran.. tanpa perlu mengantri lama</p>
     <hr>
-<p>
-    <label>Kota Asal</label>
-    <select>
-        <option value="bpp" title="Pendaftaran Pasien dengan KTP Balikpapan">Balikpapan</option>
-        <option value="non_bpp" title="Pendaftaran Pasien untuk Penduduk yang tidak memiliki KTP Balikpapan">Non Balikpapan</option>
-    </select>
-</p>
-
-<p>
-    <label>Pilih Poli Klinik</label>
-    <select>
-        <option>Poli Umum</option>
-        <option>Kebidanan dan Kandungan</option>
-        <option>Kesehatan Anak</option>
-        <option>Kulit dan Kelamin</option>
-        <option>Poli Gigi</option>
-    </select>
-</p>
-
-<p>
-    <label>
-        Masukkan Nama
-    </label>
-    <input type="text" placeholder="masukkan nama" required>
-</p>
-
-<p>
-    <label>
-        Masukkan NIK
-    </label>
-    <input type="text" placeholder="masukkan NIK" required>
-</p>
-
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-    <button type="submit">Register</button>
+    <form action="">
+        <div>
+            <label for="">Kota Asal</label>
+            <select name="">
+                <option value="bpp" title="Pendaftaran Pasien dengan KTP Balikpapan">Balikpapan</option>
+                <option value="non_bpp" title="Pendaftaran Pasien untuk Penduduk yang tidak memiliki KTP Balikpapan">Non Balikpapan</option>
+            </select>
+        </div>
+        <div>
+            <label>Pilih Poli Klinik</label>
+            <select>
+                <option>Poli Umum</option>
+                <option>Kebidanan dan Kandungan</option>
+                <option>Kesehatan Anak</option>
+                <option>Kulit dan Kelamin</option>
+                <option>Poli Gigi</option>
+            </select>
+        </div>
+        <div>
+            <label>
+                Masukkan Nama
+            </label>
+            <input type="text" placeholder="masukkan nama" required>
+        </div>
+        <div>
+            <label>
+                Masukkan NIK
+            </label>
+            <input type="text" placeholder="masukkan NIK" required>
+        </div>   
+        <input type="checkbox"> By creating an account you agree to our <a href="#">Terms & Privacy</a>.
+        <button type="submit">Register</button>
+    </form>
+    </div>
+    </section>
 </body>
 </html>
